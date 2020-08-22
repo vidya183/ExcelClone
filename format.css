@@ -1,0 +1,114 @@
+/* Default styling */
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.menu{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.menuBar {
+    padding: 5px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.menuBar:hover, .sel {
+    background-color: rgb(0, 80, 20);
+    color: white;
+}
+
+.menu-options{
+    height: 100px;
+    border-top: 2px  solid rgb(0, 77, 0);
+    border-bottom: 2px  solid rgb(0, 77, 0);
+}
+.menu-row{
+    display: flex;
+    text-align: center;
+}
+ .menu-options-item{
+    margin-left: 10px;
+    margin-top: 20px;
+    display: none;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.item {
+    margin: 5px;
+}
+
+.menu-options-item.selected{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formula-bar{
+    height: 30px;
+    border: 1px solid rgb(0, 0, 53);
+}
+.cell-container{
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 130px);
+    overflow: auto;
+    position: relative;
+}
+.cell-container>*{
+position: absolute;
+top:0px;
+}
+.sheets{
+    height: 20px;
+}
+.row{
+    display: flex;
+}
+.row .cell{
+    border:1px solid rgb(0, 46, 46);
+min-height: 25px;
+width:88px;
+}
+.top-row{
+    display: flex;
+    background-color: rgb(63, 226, 131);
+    position: absolute;
+    top: 0px;
+    left: 25px;
+}
+.left-col{
+    width: 25px;
+    background-color: rgb(63, 226, 131);
+    border: 1px solid rgb(0, 46, 46);
+    top: 24px;
+}
+.top-row .cell{
+    border: 1px solid rgb(0, 47, 47);
+    min-height: 25px;
+    min-width: 88px;
+    text-align: center;
+}
+.left-col .cell{
+border:1px solid rgb(0, 47, 47);
+height:25px;
+width:25px;
+}
+.top-left-cell{
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgb(0, 46, 46);
+    background-color: rgb(63, 226, 131);
+}
+.grid{
+top:25px;
+left: 25px;
+}
+.menu-row input[type="button"].selected{
+    background-color: gray;
+}
